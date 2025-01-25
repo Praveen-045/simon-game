@@ -5,7 +5,10 @@ body {
   background-position: center center; /* Centers the background image */
   background-repeat: no-repeat; /* Prevents the image from repeating */
 }
-
+html, body {
+  height: 100%; /* Ensures the body takes up the full height of the viewport */
+  margin: 0; /* Removes any default margins */
+}
 
 #level {
   font-family: 'Press Start 2P', cursive;
