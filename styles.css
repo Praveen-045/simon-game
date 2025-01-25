@@ -1,6 +1,5 @@
 body {
   text-align: center;
-  /* background-color: #011F3F; */
   background-image: url("simon.jpg");
   background-size: cover;
 }
@@ -8,7 +7,7 @@ body {
 #level {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
-  margin:  5%;
+  margin: 5%;
   color: #FEF2BF;
 }
 
@@ -16,7 +15,12 @@ body {
   display: block;
   width: 50%;
   margin: auto;
+}
 
+.row {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
 }
 
 .btn {
@@ -26,6 +30,7 @@ body {
   width: 200px;
   border: 10px solid black;
   border-radius: 20%;
+  cursor: pointer;
 }
 
 .game-over {
@@ -52,4 +57,30 @@ body {
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
+}
+
+.mute-btn {
+  font-family: 'Press Start 2P', cursive;
+  background-color: #FEF2BF;
+  font-size: 1rem;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.mute-btn:hover {
+  background-color: #FFD700;
+}
+
+@media screen and (max-width: 600px) {
+  .btn {
+    height: 150px;
+    width: 150px;
+  }
+
+  #level {
+    font-size: 2rem;
+  }
 }
