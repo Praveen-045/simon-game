@@ -3,11 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Simon</title>
+  <title>Simon Game</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 </head>
 <body>
+
+  <!-- Video Background (initially hidden) -->
+  <video id="bg-video" autoplay loop style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+    <source src="" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Main Content -->
   <h1 id="level">Press A Key to Start</h1>
   <div class="container">
     <div class="row">
