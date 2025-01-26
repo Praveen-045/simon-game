@@ -82,27 +82,22 @@ function playSound(name) {
 function changeBackgroundVideo(level) {
     setTimeout(function() {
         if (level === 0) {
-            videoElement.style.opacity = 0;// Wait for the fade out transition to complete before changing video source
             videoElement.src = "fight1.mp4"; // Change to another fight video
             videoElement.load(); // This reloads the video to ensure the new source is properly loaded
             videoElement.muted = false; // Ensure sound is enabled
             videoElement.play();
-            videoElement.style.opacity = 1; // Fade the video back in
         } else if (level === 10) {
-            videoElement.style.opacity = 0;// Wait for the fade out transition to complete before changing video source
+            // videoElement.style.opacity = 0;// Wait for the fade out transition to complete before changing video source
             videoElement.src = "fight2.mp4"; // Change to another fight video
             videoElement.load(); // This reloads the video to ensure the new source is properly loaded
             videoElement.muted = false; // Ensure sound is enabled
             videoElement.play();
-            videoElement.style.opacity = 1; // Fade the video back in
         }
         else if (level === 20) {
-            videoElement.style.opacity = 0;// Wait for the fade out transition to complete before changing video source
             videoElement.src = "fight3.mp4"; // Change to another fight video
             videoElement.load(); // This reloads the video to ensure the new source is properly loaded
             videoElement.muted = false; // Ensure sound is enabled
             videoElement.play();
-            videoElement.style.opacity = 1; // Fade the video back in
         }
         // Add more conditions for other levels if necessary
     }, 1000);  // Match the transition duration (1s) before changing video source
