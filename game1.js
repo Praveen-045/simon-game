@@ -12,7 +12,6 @@ document.addEventListener('click', startGame);
 function startGame() {
     if (!started) {
         started = true;
-        // Show the video and hide the background image
         document.body.style.backgroundImage = 'none';  // Remove background image
         videoElement.style.opacity = 1;  // Fade in the video
         videoElement.play();  // Start playing the video
@@ -21,7 +20,6 @@ function startGame() {
     }
 }
 
-// Handle click events for game buttons
 $(".btn").click(function() {
     if (started) {
         btnanimate(this);
@@ -34,7 +32,6 @@ $(".btn").click(function() {
             user = [];
             autogame();
         }
-        // Lower the video volume while playing
         videoElement.volume = 0.1;  // Lower video volume to 10%
     }
 });
@@ -53,10 +50,8 @@ function autogame() {
             playSound(randomChosenColour);
         }
 
-        // Change video with smooth transition
         changeBackgroundVideo(level);
         
-        // After the game sequence, restore the video volume
         videoElement.volume = 1.0;  // Set volume back to 100%
     }, 500);
 }
@@ -72,7 +67,7 @@ function btnanimate(e) {
     }
 }
 
-// Play the sound associated with a color
+
 function playSound(name) {
     var sound = new Audio(name + ".mp3");
     sound.play();
